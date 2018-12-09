@@ -59,7 +59,8 @@ clientDiscord.on("message", message => {
     // -18
     clientDiscord.on("message", message => {
         if(message.content.startsWith(PREFIX+"18ans")) {
-            if(majeur===0) {
+            if(message.member.permissions.hasPermissions('ADMINISTRATOR')) {
+                if(majeur===0) {
                 message.channel.send("⚠️ Attention ⚠️ ! Vous entrez dans une zone -18 ⛔")
                 return majeur=1
             }
@@ -67,6 +68,7 @@ clientDiscord.on("message", message => {
                 message.channel.send("Le risque de danger est de nouveau maitrisé, ooouuuf !")
                 return majeur=0
             }
+        }
         }
     });
 
