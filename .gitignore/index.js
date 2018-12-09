@@ -333,4 +333,4 @@ penis="test"
             });
 
 // Connexion
-clientDiscord.login("NTIwNjkwNDE5MzExNDQzOTc4.DuxvGw.4a8s9N_Aj_dxk6nvbck2RVc1Fqg");
+clientDiscord.login(process.env.TOKEN);
