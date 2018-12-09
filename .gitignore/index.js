@@ -224,6 +224,8 @@ clientDiscord.on('messageReactionAdd', messagereaction => {
             if(messagereaction.count>=heart){
                 messagereaction.message.channel.send("Wow ! Le ship <@"+ship1[i]+"> x " + "<@"+ ship2[i]+ '> semble avoir du succès :smirk::heart:');
                 ship.splice(i,1);
+                ship1.splice(i,1);
+                ship2.splice(i,1);
             }
         }
     }
